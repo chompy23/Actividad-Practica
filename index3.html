@@ -1,40 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="imagenes/chef_7192295.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Pagina de Ejemplo</title>
-  </head>
+<html lang="es_LA">
 
-  <body class="Pagina-Ejemplo">
-    <header class="encabezado">
-      <h1 class="recetas">Recetas de Cocina</h1>
-    </header>
-    <nav>
-      <div class="navegador">
-        <botton id="bo1" type="button" class="boton"><a href="./index.html">home</a></botton>
-        <botton id="bo2" type="button" class="boton"><a href="./index1.html">A Cerca de </a></botton>
-        <botton id="bo3" type="button" class="boton"><a href="./index2.html">Registrece</a></botton>
-        <botton id="bo5" type="button" class="boton"><a href="./index4.html">Sucursales</a></botton>
-      </div>
-    </nav>
-    
-    
-    <script src="https://kit.fontawesome.com/d96d5f5ca3.js" crossorigin="anonymous"></script>
-  </body>
-  <footer class="fondo">
-    <div class="iconos"><a href="https://twitter.com/?locale=es" ><img src="./imagenes/twitter.png" alt=""></a><a href="https://www.facebook.com/?locale=es_LA"><img src="./imagenes/facebook.png" alt=""></a>
-      <a href="https://www.instagram.com/" ><img src="./imagenes/instagram.png" alt=""></a>
-      <a href="https://ar.linkedin.com/" ><img src="./imagenes/linkedin.png" alt=""></a>
-      <a href="https://ar.pinterest.com/" "><img src="./imagenes/pinterest.png" alt=""></a>
-    <p>Derechos Reservados @2024</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="imagenes/chef_7192295.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Pagina de Ejemplo</title>
+</head>
+
+<body class="Pagina-Ejemplo">
+  <header class="encabezado">
+    <h1 class="recetas">Recetas de Cocina</h1>
+  </header>
+  <nav>
+    <div class="navegador">
+      <botton id="bo1" type="button" class="boton"><a href="./index.html">home</a></botton>
+      <botton id="bo2" type="button" class="boton"><a href="./index1.html">A Cerca de </a></botton>
+      <botton id="bo3" type="button" class="boton"><a href="./index2.html">Contacto</a></botton>
+      <botton id="bo5" type="button" class="boton"><a href="./index4.html">Sucursales</a></botton>
     </div>
-  </footer>
+  </nav>
+  <div class="datos">
+    <h3>Formulario de Registro</h3>
+    <form action="show_data.html" method="get">
+
+      <br>
+      <p >  Nombre <input type="text" name="Nombre" id="nombre" size="15" placeholder="Lorena"></p>
+      <p>  Apellido <input type="text" name="Apellido" id="apellido" size="15" placeholder="Garcia"></p>
+      <br>
+      <h3>Dirección</h3>
+      <br>
+      <p style="float: left;">  Calle <input type="text" name="calle" id="calle" size="15" placeholder="San Martin"></p>
+      <p style="float: left;">  Número <input type="number" name="Numero" id="numero" size="9" placeholder="1310"></p>
+      <p style="float: left;">  Ciudad <input type="text" name="Ciudad" id="ciudad" size="10" placeholder="San Lorenzo">
+      </p>
+      <p>  Código postal <input type="text" name="CodigoPostal" id="codigo-postal" size="8" placeholder="2200"></p>
+      <br>
+
+      <p style="float: left;">  Telefono <input type="tel" name="Telefono" id="telefono" size="11"
+          placeholder="11623457890"></p>
+      <p style="float: left;">  Fecha Nac. <input type="date" name="FechaNac." id="fecha"></p>
+      <p style="float: left;">  E_mail <input type="e_mail" name="E_mail" id="correo" placeholder="ejemplo@gmail.com"></p>
+      <p style="float: left;">  Clave <input type="password" name="Clave" id="clave"></p>
+      <p class="link">  Link de TP3 <input type="url" name="LinkDeTp3" id="link"></p>
+      <br><br><br>
+
+      <div id="genero">
+        <br>
+        <p class="generoRadio">
+            Genero :
+            <input type="radio" name="Genero" value="Hombre">Hombre
+            <input type="radio" name="Genero" value="Mujer">Mujer
+            <input type="radio" name="Genero" value="Otroº">Otro
+          </p>
+          <br><br>
+    
+          <p>Soft Hards
+            <input type="checkbox" name="Conocimiento" value="Html">Html
+            <input type="checkbox" name="Conocimiento" value="Css">Css
+            <input type="checkbox" name="Conocimiento" value="Bootstrap">Bootstrap
+            <input type="checkbox" name="Conocimiento" value="Javascript">Javascript
+            <input type="checkbox" name="Conocimiento" value="Typescrip">Typescrip
+            <input type="checkbox" name="Conocimiento" value="Angular">Angular
+            <input type="checkbox" name="Conocimiento" value="Base de Datos">Base de Datos
+            <input type="checkbox" name="Conocimiento" value="Python">Python
+            <input type="checkbox" name="Conocimiento" value="Django">Django
+          </p>
+      </div>
+      <br><br>
+      <label for="estudios">Turnos</label>
+      <select name="Formacion" id="estudios">
+        <option value="Manana">Mañana</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noche">Noche</option>
+      </select>
+      <br><br>
+      <h3>Comentarios :</h3>
+      <textarea name="Comentario" id="comentarios" cols="30" rows="5"></textarea>
+      <br>
+      <input class="envio" type="submit" value="Enviar">
+    </form>
+  </div>
+
+
+</body>
+<footer class="fondo">
+  <div class="iconos"><a href="https://twitter.com/?locale=es"><img src="./imagenes/twitter.png" alt=""></a><a
+      href="https://www.facebook.com/?locale=es_LA"><img src="./imagenes/facebook.png" alt=""></a>
+    <a href="https://www.instagram.com/"><img src="./imagenes/instagram.png" alt=""></a>
+    <a href="https://ar.linkedin.com/"><img src="./imagenes/linkedin.png" alt=""></a>
+    <a href="https://ar.pinterest.com/" "><img src=" ./imagenes/pinterest.png" alt=""></a>
+    <p>Derechos Reservados @2024</p>
+  </div>
+</footer>
+
 </html>

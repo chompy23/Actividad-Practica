@@ -22,6 +22,34 @@
   top: 1%;
 }
 
+.datos {
+  padding: 10px 10px;
+  background-color: cornflowerblue;
+  margin: 10px;
+  border: 2px solid black;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.datos input {
+  font-size: 10px;
+  height: 8px;
+  padding: 2px;
+}
+
+.datos label{
+  text-decoration:underline;
+}
+
+.datos .envio{
+  width: 60px;
+  height: 20px;
+}
+
+h3{
+  text-decoration: underline;
+}
+
 .restaurante {
   display: flex;
   justify-content: center;
@@ -36,7 +64,25 @@
   position: relative;
   left: 30px;
   margin: 40px 50px;
-  color: rgba(0, 0 ,0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contactos {
+  display: flex;
+  position: relative;
+  left: 30px;
+  font-style: italic;
+}
+
+.contactos a {
+  margin: 10px;
+}
+
+iframe {
+  display: flex;
+  position: relative;
+  right: -280px;
+  margin-top: 10px;
 }
 
 .boton {
@@ -199,6 +245,22 @@ h2 {
 
 .iconos p {
   margin-left: 60%;
+}
+
+form  p{
+  float: left;
+  margin-left: 2px;
+}
+
+#genero{
+  position: relative;
+  margin-left: 2px;
+}
+
+.generoRadio{
+  position: relative;
+  left: 1px;
+  
 }
 
 @font-face {
